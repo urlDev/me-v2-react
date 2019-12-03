@@ -1,0 +1,21 @@
+import React, { Component } from 'react';
+import { Link } from 'react-router-dom';
+import { Jumbotron, Container, Row, Col, Image, Button } from 'react-bootstrap';
+
+import './hero.css';
+
+class Hero extends Component {
+	render() {
+		return (
+			<div className="header">
+				<Container className="content">
+					<h3 className="welcome text-white">welcome to</h3>
+					<h1 className="me text-center text-white">me.</h1>
+				</Container>
+				<Image src="assets/mask.png" className="mask" />
+			</div>
+		);
+	}
+}
+
+export default Hero;

@@ -1,0 +1,27 @@
+.header {
+    background: #3A8091;
+}
+
+.content {
+    margin-top: -12vw;
+}
+
+.welcome {
+    font-family: 'Euphoria Script', cursive;
+    font-size: 2vw !important;
+    position: relative;
+    top: 22vw;
+    left: 4vw;
+}
+
+.me {
+    font-family: 'Squada One', cursive;
+    font-size: 50vw !important;
+    font-weight: bold;
+}
+
+.mask {
+    width: 100%;
+    position: relative;
+    top: 10px;
+}

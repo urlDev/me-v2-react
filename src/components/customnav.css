@@ -1,0 +1,41 @@
+.navbar {
+    background: #3A8091;
+    border-bottom: 5px solid white;
+}
+
+.navbar-brand {
+    font-family: 'Euphoria Script', cursive;
+    font-size: 20px !important;
+}
+
+.navbar-nav {
+    font-family: 'Squada One', cursive;
+    font-size: 20px;
+    /* margin-left: 30px !important; */
+}
+
+.navbar-nav li a {
+    float: right;
+    text-align: left;
+}
+
+.nav-link {
+    margin-left: 1vw;
+    letter-spacing: 0;
+    color: #fff !important;
+}
+
+.fa-bars {
+    color: white;
+    font-size: 30px !important;
+}
+
+.navbar-toggler {
+    border: none !important;
+}
+
+.navbar-toggler:focus,
+.navbar-toggler:active {
+    outline: none !important;
+    box-shadow: none !important;
+}
