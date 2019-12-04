@@ -1,0 +1,13 @@
+.about {
+    font-family: 'Squada One', cursive;
+    font-size: 10vw !important;
+    color: #012B36;
+    font-weight: bold;
+}
+
+.lorem {
+    font-family: 'Squada One', cursive;
+    font-size: 3vw !important;
+    color: #3A8091;
+    line-height: 3vw;
+}

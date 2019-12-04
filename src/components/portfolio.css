@@ -1,0 +1,106 @@
+Image {
+    padding: 0;
+    margin: 0;
+    width: 100%;
+}
+
+.portfolio {
+    font-family: 'Squada One', cursive;
+    background: #A0616A;
+    color: white !important;
+    padding: 80px 0;
+    width: 100%;
+}
+
+.display-1 {
+    font-size: 10vw !important;
+    color: #012B36;
+    font-weight: bold !important;
+}
+
+.portfolioTitle::before
+/* line under portfolio title */
+
+{
+    content: '';
+    background: white;
+    height: 0.5vw;
+    width: 20vw;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    transform: translateY(13vw);
+}
+
+.portfolioTitle::after
+/* line under portfolio title */
+
+{
+    content: '';
+    background: white;
+    height: 1.5vw;
+    width: 5vw;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    /* transform: translateY(13vw); */
+}
+
+.portfolioWrap {
+    margin-top: 5vw;
+}
+
+.portfolioTop {
+    width: 110%;
+    position: relative;
+    top: -35px;
+    left: -20px;
+}
+
+.portfolioBottom {
+    width: 110%;
+    position: relative;
+    bottom: -35px;
+    left: -22px;
+}
+
+.firstText {
+    font-size: 10vw !important;
+    margin: 0;
+    font-weight: bold !important;
+}
+
+.cardFirst {
+    margin: 0;
+    padding: 0 !important;
+    background: #A0616A !important;
+    border: none !important;
+}
+
+.cardBody {
+    padding: 0 !important;
+    font-size: 1.5vw;
+}
+
+.portfolio {
+    padding: 20px;
+}
+
+.cardText {
+    margin: 0;
+    padding: 0;
+    line-height: 1.2vw;
+    margin-top: 10px;
+    font-size: 1.4vw;
+}
+
+.button {
+    width: 150px;
+    margin-top: 50px;
+    font-family: 'Euphoria Script', cursive;
+    font-size: 30px !important;
+}
+
+.button:hover {
+    color: #012B36 !important;
+}

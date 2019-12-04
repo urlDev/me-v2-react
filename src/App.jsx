@@ -4,6 +4,8 @@ import './App.css';
 
 import CustomNav from "./components/customnav";
 import Hero from "./components/hero";
+import About from "./components/about";
+import Portfolio from "./components/portfolio";
 
 function App() {
   return (
@@ -12,6 +14,8 @@ function App() {
         <CustomNav/>
         <Hero/>
       </div>
+      <About/>
+      <Portfolio/>
     </Router>
   );
 }

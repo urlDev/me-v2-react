@@ -1,32 +1,41 @@
 .navbar {
-    background: #3A8091;
-    border-bottom: 5px solid white;
+    background: #A0616A;
+    border-bottom: 5px solid #E1D89F;
 }
 
 .navbar-brand {
     font-family: 'Euphoria Script', cursive;
     font-size: 20px !important;
+    color: #E1D89F !important;
 }
 
 .navbar-nav {
     font-family: 'Squada One', cursive;
     font-size: 20px;
+    float: right;
+    text-align: right;
     /* margin-left: 30px !important; */
 }
 
-.navbar-nav li a {
+.collapsing,
+.collapse.show {
+    padding-right: 10px;
+}
+
+
+/* .navbar-nav li a {
     float: right;
     text-align: left;
-}
+} */
 
 .nav-link {
     margin-left: 1vw;
     letter-spacing: 0;
-    color: #fff !important;
+    color: #E1D89F !important;
 }
 
 .fa-bars {
-    color: white;
+    color: #E1D89F;
     font-size: 30px !important;
 }
 
@@ -38,4 +47,9 @@
 .navbar-toggler:active {
     outline: none !important;
     box-shadow: none !important;
+}
+
+svg {
+    width: 30px;
+    height: 100%;
 }
