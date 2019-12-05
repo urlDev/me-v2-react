@@ -4,7 +4,7 @@ Image {
     width: 100%;
 }
 
-.portfolio {
+.portfolioAll {
     font-family: 'Squada One', cursive;
     background: #A0616A;
     color: white !important;
@@ -60,7 +60,7 @@ Image {
 .portfolioBottom {
     width: 110%;
     position: relative;
-    bottom: -35px;
+    bottom: -30px;
     left: -22px;
 }
 
@@ -103,4 +103,20 @@ Image {
 
 .button:hover {
     color: #012B36 !important;
+}
+
+@media (min-width: 200px) and (max-width:767px) {
+    .card-img-top {
+        width: 40vw !important;
+        margin: 0 auto !important;
+    }
+    .cardText {
+        font-size: 4vw !important;
+        line-height: 3.3vw;
+        width: 40vw;
+        margin: 0 auto;
+    }
+    .firstText {
+        font-size: 15vw !important;
+    }
 }

@@ -9,7 +9,7 @@ class Hero extends Component {
 		return (
 			<div className="header">
 				<Container className="content">
-					<h3 className="welcome text-white">welcome to</h3>
+					<h3 className="welcome text-center text-white">welcome to</h3>
 					<h1 className="me text-center text-white">me.</h1>
 				</Container>
 				<Image src="assets/mask.png" className="mask" />

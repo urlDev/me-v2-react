@@ -1,30 +1,44 @@
-.header {
-    background: #A0616A;
-    overflow: hidden;
-}
-
-.content {
-    margin-top: -12vw;
-}
-
-.welcome {
-    font-family: 'Euphoria Script', cursive;
-    font-size: 2vw !important;
-    position: relative;
-    top: 22vw;
-    left: 4vw;
-    color: #E1D89F !important;
-}
-
-.me {
-    font-family: 'Squada One', cursive;
-    font-size: 50vw !important;
-    font-weight: bold;
-    color: #E1D89F !important;
-}
-
-.mask {
-    width: 100%;
-    position: relative;
-    top: 12px;
-}
+    .header {
+        background: #3A8091;
+        overflow: hidden;
+    }
+    
+    .content {
+        margin-top: -12vw;
+    }
+    
+    .welcome {
+        font-family: 'Euphoria Script', cursive;
+        font-size: 2vw !important;
+        position: relative;
+        top: 22vw;
+        left: 4vw;
+        color: #E1D89F !important;
+    }
+    
+    .me {
+        font-family: 'Squada One', cursive;
+        font-size: 50vw !important;
+        font-weight: bold;
+        color: #E1D89F !important;
+    }
+    
+    .mask {
+        width: 100%;
+        position: relative;
+        top: 12px;
+    }
+    
+    @media (min-width: 200px) and (max-width:767.99px) {
+        .welcome {
+            font-size: 15vw !important;
+            margin-left: -11vw;
+            line-height: 11vw;
+        }
+    }
+    
+    @media (min-width: 768px) {
+        .welcome {
+            margin-left: -32.5vw;
+        }
+    }

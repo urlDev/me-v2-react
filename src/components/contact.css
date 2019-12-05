@@ -1,0 +1,93 @@
+.contactMe {
+    font-family: 'Squada One', cursive;
+    margin-bottom: 50px;
+}
+
+.contact {
+    font-size: 10vw !important;
+    color: #012B36;
+    font-weight: bold !important;
+    margin-top: 8vw;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.contact::before
+/* line under portfolio title */
+
+{
+    content: '';
+    background: #A0616A;
+    height: 0.5vw;
+    width: 20vw;
+    margin-left: 5px;
+    margin-right: auto;
+    display: block;
+    transform: translateY(7vw);
+}
+
+.contact::after
+/* line under portfolio title */
+
+{
+    content: '';
+    background: #A0616A;
+    height: 1.5vw;
+    width: 5vw;
+    margin-left: 8vw;
+    margin-right: auto;
+    display: block;
+    /* transform: translateY(13vw); */
+}
+
+Form {
+    /* width: 500px; */
+    color: #3A8091;
+}
+
+.button2 {
+    width: 100px;
+    margin-top: 50px;
+    color: #3A8091 !important;
+    font-family: 'Euphoria Script', cursive;
+    font-size: 30px !important;
+    border-color: #3A8091 !important;
+}
+
+.button2:hover {
+    background: #3A8091 !important;
+    color: white !important;
+}
+
+.card {
+    border: none !important;
+}
+
+.form-control {
+    border-color: #3A8091 !important;
+}
+
+::placeholder {
+    color: #3A8091 !important;
+}
+
+@media (min-width: 200px) and (max-width:767px) {
+    .contact {
+        transform: none;
+        text-align: center;
+    }
+    .contact::after,
+    .contact::before {
+        margin: 0 auto;
+    }
+    .contact::before {
+        transform: translateY(13vw);
+    }
+}
+
+@media (min-width: 768px) {
+    .contact {
+        transform: rotate(-90deg);
+        font-size: 5vw !important;
+    }
+}

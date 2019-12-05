@@ -1,5 +1,5 @@
 .navbar {
-    background: #A0616A;
+    background: #3A8091;
     border-bottom: 5px solid #E1D89F;
 }
 
@@ -37,10 +37,18 @@
 .fa-bars {
     color: #E1D89F;
     font-size: 30px !important;
+    width: 40px;
 }
 
 .navbar-toggler {
     border: none !important;
+    width: 40px;
+    padding: 0;
+}
+
+.navbar-toggler.collapsed {
+    width: 40px;
+    padding: 0;
 }
 
 .navbar-toggler:focus,
@@ -52,4 +60,10 @@
 svg {
     width: 30px;
     height: 100%;
+}
+
+@media (min-width: 200px) and (max-width:991px) {
+    .navbar-brand {
+        width: 40px;
+    }
 }
