@@ -4,7 +4,7 @@ Image {
     width: 100%;
 }
 
-.portfolioAll {
+#portfolio {
     font-family: 'Squada One', cursive;
     background: #A0616A;
     color: white !important;
@@ -46,6 +46,15 @@ Image {
     /* transform: translateY(13vw); */
 }
 
+.row {
+    margin: 0;
+}
+
+.col-md-6 {
+    padding-right: 0px;
+    padding-left: 0px;
+}
+
 .portfolioWrap {
     margin-top: 5vw;
 }
@@ -53,20 +62,22 @@ Image {
 .portfolioTop {
     width: 110%;
     position: relative;
-    top: -35px;
+    top: -81px;
     left: -20px;
 }
 
 .portfolioBottom {
     width: 110%;
     position: relative;
-    bottom: -30px;
+    bottom: -81px;
     left: -22px;
 }
 
 .firstText {
     font-size: 10vw !important;
     margin: 0;
+    position: relative;
+    right: 15px;
     font-weight: bold !important;
 }
 
@@ -118,5 +129,7 @@ Image {
     }
     .firstText {
         font-size: 15vw !important;
+        position: relative;
+        left: 0px;
     }
 }

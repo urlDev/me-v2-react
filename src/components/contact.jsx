@@ -6,7 +6,7 @@ import './contact.css';
 class Contact extends Component {
 	render() {
 		return (
-			<Container className="contactMe">
+			<Container className="contactMe" id="contactMe">
 				<Row>
 					<Col md={4}>
 						<h1 className="contact">contact me</h1>

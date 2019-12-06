@@ -1,0 +1,85 @@
+#footer {
+    background: #3A8091;
+}
+
+.footerTop {
+    width: 100%;
+    position: relative;
+    top: -3px;
+}
+
+.footerBottom {
+    width: 100%;
+    position: relative;
+    top: -1px;
+}
+
+.footerBottomDiv {
+    background: #012B36;
+    color: white;
+}
+
+.footerBox {
+    margin-bottom: 40px;
+    margin-top: 5vw;
+}
+
+.footerBanner {
+    font-family: 'Euphoria Script', cursive;
+    font-size: 5vw !important;
+    margin-bottom: 0;
+    padding-bottom: 0;
+    line-height: 3vw;
+}
+
+.footerBanner a,
+.footerBanner a:hover {
+    text-decoration: none;
+    color: white;
+}
+
+.footerMail {
+    font-family: 'Squada One', cursive;
+    font-size: 3vw !important;
+}
+
+.footerNav {
+    font-family: 'Squada One', cursive;
+    font-size: 3vw !important;
+}
+
+.footerNav ul {
+    list-style: none;
+}
+
+.footerNav a {
+    color: white;
+    text-decoration: none;
+}
+
+.footerNav a:hover {
+    text-decoration: none;
+    color: white;
+}
+
+.footerImg {
+    width: 7vw;
+    padding-right: 2vw;
+}
+
+hr {
+    background: white;
+}
+
+.copyright {
+    margin-bottom: 0;
+    font-family: 'Squada One', cursive;
+    font-size: 1vw !important;
+    padding-bottom: 5px;
+    color: white;
+}
+
+svg {
+    width: 30px;
+    height: 30px;
+}

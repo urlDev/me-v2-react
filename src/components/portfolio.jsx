@@ -7,7 +7,7 @@ import './portfolio.css';
 class Portfolio extends Component {
 	render() {
 		return (
-            <div className="portfolioAll">
+            <div id="portfolio">
                 <Image src="./assets/portfolioTop.png" alt="" className="portfolioTop"/>
 			
                 <Container>
@@ -16,7 +16,7 @@ class Portfolio extends Component {
                         <Col xs={12} md={4} className="portfolio">
                             <Container>
                                 <Row>
-                                    <Col md={6}>
+                                    <Col md={6} className="numbers">
                                         <h1 className="firstText text-center">01</h1>
                                     </Col>
                                     <Col md={6} className="card cardFirst">
@@ -31,7 +31,7 @@ class Portfolio extends Component {
                         <Col xs={12} md={4} className="portfolio">
                             <Container>
                                 <Row>
-                                    <Col md={6}>
+                                    <Col md={6} className="numbers ">
                                         <h1 className="firstText text-center">02</h1>
                                     </Col>
                                     <Col md={6} className="card cardFirst">
@@ -46,7 +46,7 @@ class Portfolio extends Component {
                         <Col xs={12} md={4} className="portfolio">
                             <Container>
                                 <Row>
-                                    <Col md={6}>
+                                    <Col md={6} className="numbers ">
                                         <h1 className="firstText text-center">03</h1>
                                     </Col>
                                     <Col md={6} className="card cardFirst">
