@@ -1,15 +1,45 @@
 .navbar {
-    background: #3A8091;
-    border-bottom: 5px solid #E1D89F;
+    background: #EDF7F6;
+    position: relative;
+    padding: 0;
+    border: none;
+}
+
+Nav::after {
+    content: '';
+    background: linear-gradient(90deg, rgba(35, 116, 171, 1) 0%, rgba(160, 97, 106, 1) 40%, rgba(225, 216, 159, 1) 75%, rgba(125, 197, 246, 1) 100%);
+    background-size: 500% 1000%;
+    height: 0.5vw;
+    width: 100%;
+    position: absolute;
+    top: 50px;
+    border: 1px solid #EDF7F6;
+    /* animation: animate 4s linear alternate infinite, border 4s linear alternate infinite; */
+}
+
+Nav:hover::after {
+    animation: animate 2s linear alternate infinite;
+}
+
+@keyframes animate {
+    0% {
+        background-position: 7% 0%
+    }
+    50% {
+        background-position: 94% 100%
+    }
+    100% {
+        background-position: 7% 0%
+    }
 }
 
 .navbar-brand {
-    font-family: 'Euphoria Script', cursive;
-    font-size: 20px !important;
-    color: #E1D89F !important;
+    width: 30px;
+    padding-left: 10px;
 }
 
 .navbar-nav {
+    width: 40%;
     font-family: 'Squada One', cursive;
     font-size: 20px;
     float: right;
@@ -31,11 +61,12 @@
 .nav-link {
     margin-left: 1vw;
     letter-spacing: 0;
-    color: #E1D89F !important;
+    color: #2374AB !important;
+    padding-right: 10px !important;
 }
 
 .fa-bars {
-    color: #E1D89F;
+    color: #2374AB;
     font-size: 30px !important;
     width: 40px;
 }

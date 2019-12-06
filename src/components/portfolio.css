@@ -13,7 +13,7 @@ Image {
 }
 
 .display-1 {
-    font-size: 10vw !important;
+    font-size: 7vw !important;
     color: #012B36;
     font-weight: bold !important;
 }
@@ -29,7 +29,7 @@ Image {
     margin-left: auto;
     margin-right: auto;
     display: block;
-    transform: translateY(13vw);
+    transform: translateY(9.35vw);
 }
 
 .portfolioTitle::after
@@ -69,7 +69,7 @@ Image {
 .portfolioBottom {
     width: 110%;
     position: relative;
-    bottom: -81px;
+    bottom: -82px;
     left: -22px;
 }
 

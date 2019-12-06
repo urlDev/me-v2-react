@@ -26,10 +26,10 @@
 
 .footerBanner {
     font-family: 'Euphoria Script', cursive;
-    font-size: 5vw !important;
+    font-size: 20px !important;
     margin-bottom: 0;
     padding-bottom: 0;
-    line-height: 3vw;
+    line-height: 10px;
 }
 
 .footerBanner a,
@@ -40,12 +40,12 @@
 
 .footerMail {
     font-family: 'Squada One', cursive;
-    font-size: 3vw !important;
+    font-size: 20px !important;
 }
 
 .footerNav {
     font-family: 'Squada One', cursive;
-    font-size: 3vw !important;
+    font-size: 20px !important;
 }
 
 .footerNav ul {
@@ -63,7 +63,7 @@
 }
 
 .footerImg {
-    width: 7vw;
+    width: 5vw;
     padding-right: 2vw;
 }
 

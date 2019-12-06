@@ -1,5 +1,5 @@
     .header {
-        background: #3A8091;
+        background: #EDF7F6;
         overflow: hidden;
     }
     
@@ -13,20 +13,20 @@
         position: relative;
         top: 22vw;
         left: 4vw;
-        color: #E1D89F !important;
+        color: #2374AB !important;
     }
     
     .me {
         font-family: 'Squada One', cursive;
         font-size: 50vw !important;
         font-weight: bold;
-        color: #E1D89F !important;
+        color: #2374AB !important;
     }
     
     .mask {
-        width: 100%;
+        width: 110%;
         position: relative;
-        top: 12px;
+        top: 17px;
     }
     
     @media (min-width: 200px) and (max-width:767.99px) {

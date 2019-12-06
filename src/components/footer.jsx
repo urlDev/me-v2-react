@@ -6,8 +6,7 @@ import './footer.css';
 
 class Footer extends Component {
 	render() {
-		let n = new Date();
-		let y = n.getFullYear();
+		let n = new Date().getFullYear();
 		return (
 			<div id="footer">
 				<div className="footerTopDiv">
@@ -46,7 +45,7 @@ class Footer extends Component {
 							</Col>
 						</Row>
 						<hr />
-						<p className="copyright text-center">©{y}</p>
+						<p className="copyright text-center">©{n}</p>
 					</Container>
 				</div>
 			</div>
