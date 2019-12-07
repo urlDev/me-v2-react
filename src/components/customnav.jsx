@@ -7,13 +7,13 @@ import './customnav.css';
 class CustomNav extends Component {
 	render() {
 		return (
-			<Container>
-				<Navbar default collapseOnSelect variant="dark" expand="lg">
+		
+				<Navbar default collapseOnSelect variant="dark" expand="lg" className="flex-column" >
 					<Navbar.Brand href="/">{/* <Link to="/">Me</Link> */}<Logo/></Navbar.Brand>
 					<Navbar.Toggle aria-controls="basic-navbar-nav"><i class="fas fa-bars"></i></Navbar.Toggle>
 					<Navbar.Collapse id="basic-navbar-nav">
-						<Nav className="ml-auto">
-							<Nav.Link eventKey={1} componentClass={Link} href="#about">
+						<Nav className="ml-auto flex-column">
+							<Nav.Link eventKey={1} componentClass={Link} data-text="about" href="#about">
 								about
 							</Nav.Link>
 							<Nav.Link eventKey={2} componentClass={Link} href="#portfolio">
@@ -25,7 +25,7 @@ class CustomNav extends Component {
 						</Nav>
 					</Navbar.Collapse>
 				</Navbar>
-			</Container>
+			
 		);
 	}
 }

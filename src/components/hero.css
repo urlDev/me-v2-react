@@ -1,26 +1,26 @@
     .header {
-        background: #EDF7F6;
+        background: #D7DEDC;
         overflow: hidden;
     }
     
     .content {
-        margin-top: -12vw;
+        margin-top: -15vw;
     }
     
     .welcome {
         font-family: 'Euphoria Script', cursive;
         font-size: 2vw !important;
+        color: #A0616A !important;
         position: relative;
-        top: 22vw;
-        left: 4vw;
-        color: #2374AB !important;
+        top: 18vw;
+        left: 10vw;
     }
     
     .me {
         font-family: 'Squada One', cursive;
-        font-size: 50vw !important;
+        font-size: 40vw !important;
         font-weight: bold;
-        color: #2374AB !important;
+        color: #A0616A !important;
     }
     
     .mask {

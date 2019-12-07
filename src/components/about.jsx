@@ -7,7 +7,8 @@ import './about.css';
 class About extends Component {
 	render() {
 		return (
-				<Container id="about">
+			<div id="about">
+				<Container>
 					<h1 className="about text-left">about me</h1>
 					<p className="lorem text-center">
 						Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum voluptate at earum voluptates
@@ -16,6 +17,7 @@ class About extends Component {
 						quae ut expedita beatae.
 					</p>
 				</Container>
+			</div>
 		);
 	}
 }

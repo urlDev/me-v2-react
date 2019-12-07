@@ -11,6 +11,7 @@ import Footer from './components/footer';
 function App() {
 	return (
 		<Router>
+			<div>
 			<div className="hero">
 				<CustomNav />
 				<Hero />
@@ -19,6 +20,8 @@ function App() {
 			<Portfolio />
 			<Contact />
 			<Footer />
+			</div>
+			
 		</Router>
 	);
 }

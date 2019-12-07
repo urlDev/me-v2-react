@@ -1,18 +1,46 @@
 #about {
-    position: relative;
-    top: -10px;
+    /* background: linear-gradient(160deg, rgba(1, 1, 78, 1) 60%, rgba(160, 97, 106, 1) 100%); */
+    border: 1px solid #EDF7F6;
+    /* animation: border 7s linear infinite; */
+    height: 40vw;
+    margin-top: 5vw;
 }
+
+
+/* @keyframes border {
+    0%,
+    100% {
+        border-radius: 64% 36% 27% 73% / 55% 58% 42% 45%;
+    }
+    25% {
+        border-radius: 73% 27% 26% 38% / 73% 36% 64% 27%;
+    }
+    50% {
+        border-radius: 28% 72% 44% 56% / 49% 40% 60% 51%;
+    }
+    75% {
+        border-radius: 40% 60% 70% 30% / 47% 62% 38% 53%;
+    }
+} */
+
+
+/* .container {
+    background: none;
+} */
 
 .about {
     font-family: 'Squada One', cursive;
     font-size: 7vw !important;
-    color: #012B36;
+    color: #E1D89F;
     font-weight: bold;
+    background: none;
+    margin-top: 7vw;
 }
 
 .lorem {
     font-family: 'Squada One', cursive;
     font-size: 2vw !important;
-    color: #3A8091;
+    color: #EDF7F6;
     line-height: 3vw;
+    background: none;
 }
