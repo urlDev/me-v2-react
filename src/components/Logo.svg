@@ -1,6 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="541" height="541" viewBox="0 0 541 541">
   <g id="Logo" transform="translate(-583 -382)">
-    <path id="border" d="M100,0H441A100,100,0,0,1,541,100V541a0,0,0,0,1,0,0H100A100,100,0,0,1,0,441V100A100,100,0,0,1,100,0Z" transform="translate(583 382)" fill="#980b8a"/>
+    <path id="border" d="M100,0H441A100,100,0,0,1,541,100V541a0,0,0,0,1,0,0H100A100,100,0,0,1,0,441V100A100,100,0,0,1,100,0Z" transform="translate(583 382)" fill="#2374AB"/>
     <g id="groupC" transform="translate(1 19)">
       <g id="linedCircle" transform="translate(636.655 633) rotate(-45)" fill="none" stroke-dasharray="1 10">
         <path d="M165,0A165,165,0,0,1,330,165H0A165,165,0,0,1,165,0Z" stroke="none"/>

@@ -8,16 +8,16 @@
     }
     
     .welcome {
-        font-family: 'Euphoria Script', cursive;
-        font-size: 2vw !important;
+        font-family: 'Lobster', cursive;
+        font-size: 1.7vw !important;
         color: #A0616A !important;
         position: relative;
         top: 18vw;
-        left: 10vw;
+        left: 7vw;
     }
     
     .me {
-        font-family: 'Squada One', cursive;
+        font-family: 'Rokkitt', serif;
         font-size: 40vw !important;
         font-weight: bold;
         color: #A0616A !important;
