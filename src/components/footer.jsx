@@ -13,7 +13,7 @@ class Footer extends Component {
 					<Image src="./assets/footerTop.png" className="footerTop" />
 				</div>
 				<div className="footerBottomDiv">
-					<Image src="./assets/footerBottom.png" alt="" className="footerBottom" />
+					{/* <Image src="./assets/footerBottom.png" alt="" className="footerBottom" /> */}
 					<Container className="footerContainer">
 						<Row>
 							<Col className="footerBox">
