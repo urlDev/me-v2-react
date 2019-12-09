@@ -10,13 +10,12 @@ Nav::after {
     background: linear-gradient(90deg, #A0616A 0%, rgba(160, 97, 106, 1) 40%, #01014E 75%, rgba(125, 197, 246, 1) 100%);
     background-size: 500% 1000%;
     height: 7px;
-    width: 45%;
+    width: 42.3%;
     position: absolute;
-    top: 24vw;
-    border: 1px solid #D7DEDC;
-    border-radius: 5px;
+    top: 23.7vw;
+    /* border-radius: 5px; */
     transform: rotate(-90deg);
-    margin-left: -40vw;
+    margin-left: -37vw;
 }
 
 Nav:hover::after {
@@ -38,9 +37,8 @@ Nav:hover::after {
 .navbar-brand {
     width: 10%;
     position: relative;
-    top: 1.5vw;
-    left: -38.3%;
-    margin: 0 !important;
+    top: 2.5vw;
+    margin-left: -70%;
 }
 
 .navbar-nav {
@@ -64,12 +62,12 @@ Nav:hover::after {
 } */
 
 .nav-link {
-    width: 9%;
+    width: 12%;
     letter-spacing: 0;
     color: #A0616A !important;
     padding-left: 0px !important;
     position: relative;
-    top: 23vw;
+    top: 34vw;
 }
 
 .nav-link:hover {
@@ -111,7 +109,6 @@ Nav:hover::after {
 svg {
     width: 30px;
     height: 100%;
-    margin: 0 !important;
 }
 
 @media (min-width: 200px) and (max-width:991px) {

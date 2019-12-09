@@ -7,7 +7,7 @@ import './customnav.css';
 class CustomNav extends Component {
 	render() {
 		return (
-		
+			
 				<Navbar default collapseOnSelect variant="dark" expand="lg" className="flex-column" >
 					<Navbar.Brand href="/">{/* <Link to="/">Me</Link> */}<Logo/></Navbar.Brand>
 					<Navbar.Toggle aria-controls="basic-navbar-nav"><i class="fas fa-bars"></i></Navbar.Toggle>

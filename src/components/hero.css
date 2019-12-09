@@ -12,7 +12,7 @@
         font-size: 1.7vw !important;
         color: #A0616A !important;
         position: relative;
-        top: 18vw;
+        top: 29vw;
         left: 7vw;
     }
     
@@ -21,6 +21,14 @@
         font-size: 40vw !important;
         font-weight: bold;
         color: #A0616A !important;
+        position: relative;
+        top: 11vw;
+    }
+    
+    .dot {
+        transition: transform 2s ease-in-out;
+        transform: rotate(90deg);
+        transform-origin: bottom left;
     }
     
     .mask {
