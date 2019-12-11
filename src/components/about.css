@@ -31,16 +31,14 @@
 .about {
     font-family: 'Rokkitt', serif;
     font-size: 7vw !important;
-    color: #012B36;
+    color: #3C3C3C;
     font-weight: bold;
-    background: none;
     margin-top: 5vw;
 }
 
 .lorem {
     font-family: 'Kanit', sans-serif;
     font-size: 2vw !important;
-    color: #3A8091;
+    color: #A0616A;
     line-height: 3vw;
-    background: none;
 }

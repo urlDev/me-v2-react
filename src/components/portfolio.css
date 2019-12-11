@@ -6,7 +6,7 @@ Image {
 
 #portfolio {
     font-family: 'Rokkitt', serif;
-    background: #A0616A;
+    background: #087E8B;
     color: white !important;
     padding: 80px 0;
     width: 100%;
@@ -14,7 +14,7 @@ Image {
 
 .display-1 {
     font-size: 7vw !important;
-    color: #012B36;
+    color: #3C3C3C;
     font-weight: bold !important;
 }
 
@@ -84,7 +84,7 @@ Image {
 .cardFirst {
     margin: 0;
     padding: 0 !important;
-    background: #A0616A !important;
+    background: #087E8B !important;
     border: none !important;
 }
 
@@ -106,15 +106,49 @@ Image {
 }
 
 .button {
-    width: 150px;
-    margin-top: 50px;
+    width: 130px;
+    position: relative;
+    background: #087E8B !important;
     font-family: 'Lobster', cursive;
     font-size: 30px !important;
+    position: relative;
+    z-index: 55;
+    margin-top: 50px;
 }
 
+
+/* 
+.button:after {
+    content: '';
+    position: absolute;
+    top: -5px;
+    left: -5px;
+    right: -5px;
+    bottom: -5px;
+    border-radius: 5px;
+    background: linear-gradient(135deg, rgba(255, 255, 255, 1) 0%, rgba(215, 222, 220, 1) 49%, rgba(160, 97, 106, 1) 100%);
+    z-index: -1;
+} */
+
 .button:hover {
-    color: #012B36 !important;
+    /* animation: button 2s ease-in-out alternate infinite; */
+    background: #3C3C3C !important;
+    color: white;
+    border: 1px solid #3C3C3C !important;
 }
+
+
+/* @keyframes button {
+    0% {
+        background-position: 7% 0%;
+    }
+    50% {
+        background-position: 94% 100%;
+    }
+    100% {
+        background-position: 7% 0%;
+    }
+} */
 
 @media (min-width: 200px) and (max-width:767px) {
     .card-img-top {
@@ -132,4 +166,7 @@ Image {
         position: relative;
         left: 0px;
     }
+    /* .display-1 {
+        font-size: 4vw !important;
+    } */
 }

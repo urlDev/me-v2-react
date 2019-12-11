@@ -4,8 +4,8 @@
 }
 
 .contact {
-    font-size: 10vw !important;
-    color: #012B36;
+    /* font-size: 10vw !important; */
+    color: #3C3C3C;
     font-weight: bold !important;
     margin-top: 8vw;
     margin-left: auto;
@@ -19,11 +19,11 @@
     content: '';
     background: #A0616A;
     height: 0.5vw;
-    width: 20vw;
+    width: 17.7vw;
     margin-left: 5px;
     margin-right: auto;
     display: block;
-    transform: translateY(7vw);
+    transform: translateY(5.8vw);
 }
 
 .contact::after
@@ -34,7 +34,7 @@
     background: #A0616A;
     height: 1.5vw;
     width: 5vw;
-    margin-left: 8vw;
+    margin-left: 7vw;
     margin-right: auto;
     display: block;
     /* transform: translateY(13vw); */
@@ -42,20 +42,20 @@
 
 Form {
     /* width: 500px; */
-    color: #3A8091;
+    color: #087E8B;
 }
 
 .button2 {
     width: 100px;
     margin-top: 50px;
-    color: #3A8091 !important;
+    color: #087E8B !important;
     font-family: 'Lobster', cursive;
     font-size: 30px !important;
     border-color: #3A8091 !important;
 }
 
 .button2:hover {
-    background: #3A8091 !important;
+    background: #087E8B !important;
     color: white !important;
 }
 
@@ -64,11 +64,11 @@ Form {
 }
 
 .form-control {
-    border-color: #3A8091 !important;
+    border-color: #087E8B !important;
 }
 
 ::placeholder {
-    color: #3A8091 !important;
+    color: #087E8B !important;
 }
 
 @media (min-width: 200px) and (max-width:767px) {
@@ -81,13 +81,13 @@ Form {
         margin: 0 auto;
     }
     .contact::before {
-        transform: translateY(13vw);
+        transform: translateY(3.38rem);
     }
 }
 
 @media (min-width: 768px) {
     .contact {
         transform: rotate(-90deg);
-        font-size: 5vw !important;
+        font-size: 4vw !important;
     }
 }

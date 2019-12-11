@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 import { Container, Image } from 'react-bootstrap';
-
 import './hero.css';
 
 class Hero extends Component {

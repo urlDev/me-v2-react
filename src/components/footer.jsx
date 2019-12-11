@@ -23,7 +23,7 @@ class Footer extends Component {
 								<h1 className="footerMail">hello@url.com</h1>
 							</Col>
 							<Col className="footerBox footerNav">
-								<Nav>
+								<Nav >
 									<Nav.Item>
 										<Nav.Link href="#about">about</Nav.Link>
 									</Nav.Item>

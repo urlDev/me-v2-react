@@ -10,12 +10,12 @@ Nav::after {
     background: linear-gradient(90deg, #A0616A 0%, rgba(160, 97, 106, 1) 40%, #01014E 75%, rgba(125, 197, 246, 1) 100%);
     background-size: 500% 1000%;
     height: 7px;
-    width: 42.3%;
+    width: 40.5rem;
     position: absolute;
     top: 23.7vw;
     /* border-radius: 5px; */
     transform: rotate(-90deg);
-    margin-left: -37vw;
+    margin-left: -37.5%;
 }
 
 Nav:hover::after {
@@ -61,7 +61,7 @@ Nav:hover::after {
     text-align: left;
 } */
 
-.nav-link {
+.links {
     width: 12%;
     letter-spacing: 0;
     color: #A0616A !important;
@@ -70,7 +70,7 @@ Nav:hover::after {
     top: 34vw;
 }
 
-.nav-link:hover {
+.links:hover {
     /* with webkits, background is clipped and text is visible */
     background: linear-gradient(90deg, rgba(1, 1, 78, 1) 60%, rgba(58, 128, 145, 1) 100%);
     -webkit-background-clip: text;
@@ -113,10 +113,30 @@ svg {
 
 @media (min-width: 200px) and (max-width:991px) {
     .navbar-brand {
-        width: 40px;
+        /* width: 40px; */
+        margin-left: -70vw;
+        position: relative;
+        top: 3vw;
     }
     Nav::after {
         position: relative;
-        top: 10px;
+        transform: rotate(-180deg);
+        top: 1vw;
+        left: 19vw;
+        width: 90%;
+    }
+    .fa-bars {
+        position: relative;
+        margin-left: 42vw;
+        top: -2vw;
+    }
+    .navbar-nav {
+        position: relative;
+        top: -33vw;
+        margin-left: -4vw !important;
+        text-align: right;
+    }
+    .nav-link {
+        width: 100%;
     }
 }

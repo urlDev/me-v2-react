@@ -1,5 +1,5 @@
 #footer {
-    background: #D7DEDC;
+    background: #A0616A;
 }
 
 .footerTop {
@@ -15,7 +15,7 @@
 }
 
 .footerBottomDiv {
-    background: #D7DEDC;
+    background: #A0616A;
     color: white;
 }
 
@@ -25,7 +25,7 @@
 }
 
 .footerBanner {
-    font-family: 'Euphoria Script', cursive;
+    font-family: 'Lobster', cursive;
     font-size: 20px !important;
     margin-bottom: 0;
     padding-bottom: 0;
@@ -39,13 +39,13 @@
 }
 
 .footerMail {
-    font-family: 'Squada One', cursive;
+    font-family: 'Rokkitt', serif;
     font-size: 20px !important;
 }
 
 .footerNav {
-    font-family: 'Squada One', cursive;
-    font-size: 20px !important;
+    font-family: 'Rokkitt', serif;
+    font-size: 30px !important;
 }
 
 .footerNav ul {
@@ -59,7 +59,10 @@
 
 .footerNav a:hover {
     text-decoration: none;
-    color: white;
+    /* with webkits, background is clipped and text is visible */
+    background: linear-gradient(90deg, rgba(1, 1, 78, 1) 60%, rgba(58, 128, 145, 1) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 .footerImg {
@@ -73,7 +76,7 @@ hr {
 
 .copyright {
     margin-bottom: 0;
-    font-family: 'Squada One', cursive;
+    font-family: 'Rokkitt', serif;
     font-size: 1vw !important;
     padding-bottom: 5px;
     color: white;
