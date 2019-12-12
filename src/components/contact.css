@@ -40,37 +40,6 @@
     /* transform: translateY(13vw); */
 }
 
-Form {
-    /* width: 500px; */
-    color: #087E8B;
-}
-
-.button2 {
-    width: 100px;
-    margin-top: 50px;
-    color: #087E8B !important;
-    font-family: 'Lobster', cursive;
-    font-size: 30px !important;
-    border-color: #3A8091 !important;
-}
-
-.button2:hover {
-    background: #087E8B !important;
-    color: white !important;
-}
-
-.card {
-    border: none !important;
-}
-
-.form-control {
-    border-color: #087E8B !important;
-}
-
-::placeholder {
-    color: #087E8B !important;
-}
-
 @media (min-width: 200px) and (max-width:767px) {
     .contact {
         transform: none;
