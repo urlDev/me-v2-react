@@ -1,6 +1,8 @@
 import React from 'react';
 import { Container, Row, Col, Button, Form } from 'react-bootstrap';
 import Fade from 'react-reveal/Fade';
+import Shake from 'react-reveal/Shake';
+
 import './input.css';
 
 const firebase = require('firebase');
@@ -24,20 +26,20 @@ class Input extends React.Component {
 			message: ''
 		};
 	}
-    
-    
 
 	handleSubmit = (e) => {
 		e.preventDefault();
 
+		const { firstName, lastName, email, message } = this.state;
 		const createdAt = new Date();
+
 		const messages = db
 			.collection('messages')
 			.add({
-				firstName: this.state.firstName,
-				lastName: this.state.lastName,
-				email: this.state.email,
-				message: this.state.message,
+				firstName: firstName,
+				lastName: lastName,
+				email: email,
+				message: message,
 				createdAt
 			})
 			.catch((error) => console.log(error));
@@ -120,9 +122,11 @@ class Input extends React.Component {
 					<Row>
 						<Col className="text-center">
 							<Fade bottom delay={750}>
-								<Button variant="outline-light" className="btn-lg button2" type="submit">
-									send
-								</Button>
+								
+									<Button variant="outline-light" className="btn-lg button2" type="submit">
+										send
+									</Button>
+								
 							</Fade>
 						</Col>
 					</Row>
