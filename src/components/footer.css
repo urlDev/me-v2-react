@@ -86,3 +86,15 @@ svg {
     width: 30px;
     height: 30px;
 }
+
+@media (min-width: 200px) and (max-width:767px) {
+    .footerNav {
+        margin-top: 7px;
+    }
+    .footerImg {
+        width: 8vw;
+    }
+    .copyright {
+        font-size: 3vw !important;
+    }
+}

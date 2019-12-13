@@ -42,3 +42,9 @@
     color: #A0616A;
     line-height: 3vw;
 }
+
+@media (min-width: 200px) and (max-width:767px) {
+    .lorem {
+        font-size: 3vw !important;
+    }
+}

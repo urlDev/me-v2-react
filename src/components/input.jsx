@@ -1,7 +1,6 @@
 import React from 'react';
-
 import { Container, Row, Col, Button, Form } from 'react-bootstrap';
-
+import Fade from 'react-reveal/Fade';
 import './input.css';
 
 const firebase = require('firebase');
@@ -25,21 +24,21 @@ class Input extends React.Component {
 			message: ''
 		};
 	}
-
-	
+    
+    
 
 	handleSubmit = (e) => {
 		e.preventDefault();
 
-        const createdAt = new Date();
-        const messages = db
+		const createdAt = new Date();
+		const messages = db
 			.collection('messages')
 			.add({
 				firstName: this.state.firstName,
 				lastName: this.state.lastName,
 				email: this.state.email,
 				message: this.state.message,
-                createdAt
+				createdAt
 			})
 			.catch((error) => console.log(error));
 
@@ -50,7 +49,7 @@ class Input extends React.Component {
 			message: ''
 		});
 
-        alert("Your message has been sent!")
+		alert('Your message has been sent!');
 	};
 
 	handleChange = (e) => {
@@ -62,64 +61,69 @@ class Input extends React.Component {
 	render() {
 		return (
 			<Form onSubmit={this.handleSubmit}>
-				<Form.Group>
-					<Form.Label>First Name</Form.Label>
-					<Form.Control
-						onChange={this.handleChange}
-						value={this.state.firstName}
-						name="firstName"
-						type="text"
-						placeholder="First name"
-						className="form-control"
-						required
-					/>
-				</Form.Group>
-				<Form.Group>
-					<Form.Label>Last Name</Form.Label>
-					<Form.Control
-						onChange={this.handleChange}
-						value={this.state.lastName}
-						name="lastName"
-						type="text"
-						placeholder="Last name"
-						className="form-control"
-					/>
-				</Form.Group>
-				<Form.Group>
-					<Form.Label>Email</Form.Label>
-					<Form.Control
-						onChange={this.handleChange}
-						value={this.state.email}
-						name="email"
-						type="email"
-						placeholder="name@example.com"
-						className="form-control"
-						required
-					/>
-				</Form.Group>
-				<Form.Group>
-					<Form.Label>Your Message</Form.Label>
-					<Form.Control
-						onChange={this.handleChange}
-						as="textarea"
-						rows="4"
-						className="form-control"
-						value={this.state.message}
-						name="message"
-						required
-					/>
-				</Form.Group>
-
+				<Fade bottom>
+					<Form.Group>
+						<Form.Label>First Name</Form.Label>
+						<Form.Control
+							onChange={this.handleChange}
+							value={this.state.firstName}
+							name="firstName"
+							type="text"
+							placeholder="First name"
+							className="form-control"
+							required
+						/>
+					</Form.Group>
+				</Fade>
+				<Fade bottom delay={400}>
+					<Form.Group>
+						<Form.Label>Last Name</Form.Label>
+						<Form.Control
+							onChange={this.handleChange}
+							value={this.state.lastName}
+							name="lastName"
+							type="text"
+							placeholder="Last name"
+							className="form-control"
+						/>
+					</Form.Group>
+				</Fade>
+				<Fade bottom delay={500}>
+					<Form.Group>
+						<Form.Label>Email</Form.Label>
+						<Form.Control
+							onChange={this.handleChange}
+							value={this.state.email}
+							name="email"
+							type="email"
+							placeholder="name@example.com"
+							className="form-control"
+							required
+						/>
+					</Form.Group>
+				</Fade>
+				<Fade bottom delay={600}>
+					<Form.Group>
+						<Form.Label>Your Message</Form.Label>
+						<Form.Control
+							onChange={this.handleChange}
+							as="textarea"
+							rows="4"
+							className="form-control"
+							value={this.state.message}
+							name="message"
+							required
+						/>
+					</Form.Group>
+				</Fade>
 				<Container>
 					<Row>
 						<Col className="text-center">
-							<Button
-								variant="outline-light"
-								className="btn-lg button2"
-								type="submit"
-							>
-								send
-							</Button>
+							<Fade bottom delay={750}>
+								<Button variant="outline-light" className="btn-lg button2" type="submit">
+									send
+								</Button>
+							</Fade>
 						</Col>
 					</Row>
 				</Container>
