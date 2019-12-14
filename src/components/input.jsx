@@ -1,7 +1,6 @@
 import React from 'react';
 import { Container, Row, Col, Button, Form } from 'react-bootstrap';
 import Fade from 'react-reveal/Fade';
-import Shake from 'react-reveal/Shake';
 
 import './input.css';
 
@@ -23,7 +22,8 @@ class Input extends React.Component {
 			firstName: '',
 			lastName: '',
 			email: '',
-			message: ''
+			message: '',
+            classNames: ""
 		};
 	}
 
@@ -58,7 +58,17 @@ class Input extends React.Component {
 		const { value, name } = e.target;
 
 		this.setState({ [name]: value });
+
+        
 	};
+
+    handleClick = () => {
+        const { classNames, firstName, email, message } = this.state;
+        
+        if(firstName === "" && email === "" && message === "") {
+            this.setState({classNames: classNames ? "" : "shake"});
+        }
+    }
 
 	render() {
 		return (
@@ -111,7 +121,7 @@ class Input extends React.Component {
 							onChange={this.handleChange}
 							as="textarea"
 							rows="4"
-							className="form-control"
+							className={`form-control`}
 							value={this.state.message}
 							name="message"
 							required
@@ -122,11 +132,9 @@ class Input extends React.Component {
 					<Row>
 						<Col className="text-center">
 							<Fade bottom delay={750}>
-								
-									<Button variant="outline-light" className="btn-lg button2" type="submit">
-										send
-									</Button>
-								
+								<Button onClick={this.handleClick}  variant="outline-light" className={`${this.state.classNames} btn-lg button2`} type="submit">
+									send
+								</Button>
 							</Fade>
 						</Col>
 					</Row>

@@ -10,6 +10,7 @@ Form {
     font-family: 'Lobster', cursive;
     font-size: 30px !important;
     border-color: #3A8091 !important;
+    position: relative;
 }
 
 .button2:hover {
@@ -27,4 +28,37 @@ Form {
 
 ::placeholder {
     color: #087E8B !important;
+}
+
+.shake {
+    position: relative;
+    left: 0;
+    animation: animate 1s linear;
+}
+
+@keyframes animate {
+    0% {
+        left: 0
+    }
+    10% {
+        left: -3px
+    }
+    20% {
+        left: 5px
+    }
+    30% {
+        left: -8px
+    }
+    40% {
+        left: 8px
+    }
+    50% {
+        left: -5px
+    }
+    60% {
+        left: 3px
+    }
+    100% {
+        left: 0
+    }
 }
