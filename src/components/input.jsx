@@ -4,6 +4,8 @@ import Fade from 'react-reveal/Fade';
 
 import './input.css';
 
+
+// needed for firebase. works this way.
 const firebase = require('firebase');
 require('firebase/firestore');
 
@@ -32,7 +34,7 @@ class Input extends React.Component {
 
 		const { firstName, lastName, email, message } = this.state;
 		const createdAt = new Date();
-
+// creates a collection in firebase called messages. and adds all the inputs and date.
 		const messages = db
 			.collection('messages')
 			.add({
@@ -43,7 +45,7 @@ class Input extends React.Component {
 				createdAt
 			})
 			.catch((error) => console.log(error));
-
+// sets the states back to empty, initial state
 		this.setState({
 			firstName: '',
 			lastName: '',
@@ -54,6 +56,7 @@ class Input extends React.Component {
 		alert('Your message has been sent!');
 	};
 
+// gets the value of inputs
 	handleChange = (e) => {
 		const { value, name } = e.target;
 
@@ -61,7 +64,7 @@ class Input extends React.Component {
 
         
 	};
-
+// with onclick of button, checks if states are empty, if they are empty then adds the classname of shake(which ive put in css)
     handleClick = () => {
         const { classNames, firstName, email, message } = this.state;
         
@@ -69,6 +72,13 @@ class Input extends React.Component {
             this.setState({classNames: classNames ? "" : "shake"});
         }
     }
+
+// sets the state back to empty after animation ends.
+	animationEnd = () => {
+		this.setState({
+			classNames: "",
+		})
+	}
 
 	render() {
 		return (
@@ -132,7 +142,7 @@ class Input extends React.Component {
 					<Row>
 						<Col className="text-center">
 							<Fade bottom delay={750}>
-								<Button onClick={this.handleClick}  variant="outline-light" className={`${this.state.classNames} btn-lg button2`} type="submit">
+								<Button onClick={this.handleClick} onAnimationEnd={this.animationEnd} variant="outline-light" className={`${this.state.classNames} btn-lg button2`} type="submit">
 									send
 								</Button>
 							</Fade>

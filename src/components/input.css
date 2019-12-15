@@ -33,30 +33,30 @@ Form {
 .shake {
     position: relative;
     left: 0;
-    animation: animate 1s linear;
+    animation: shake 1s linear;
 }
 
-@keyframes animate {
+@keyframes shake {
     0% {
         left: 0
     }
     10% {
-        left: -3px
+        left: -7px
     }
     20% {
-        left: 5px
+        left: 9px
     }
     30% {
-        left: -8px
+        left: -11px
     }
     40% {
-        left: 8px
+        left: 12px
     }
     50% {
-        left: -5px
+        left: -9px
     }
     60% {
-        left: 3px
+        left: 7px
     }
     100% {
         left: 0
